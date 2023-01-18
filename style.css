@@ -1,0 +1,149 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	min-height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #E5E5E5;
+}
+
+.container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 10px auto;
+	flex-wrap: wrap;
+}
+
+.border{
+	height: 369px;
+	width: 290px;
+	background: transparent;
+	border-radius: 10px;
+	transition: border 1s;
+	position: relative;
+}
+
+.border:hover{
+	border: 1px solid #FFF;
+}
+
+.card{
+	height: 379px;
+	width: 300px;
+	background: #808080;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 70px 63px -60px #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	margin: 1vw;
+	transition: background 0.8s;
+}
+
+.card01{
+	background: url('hero01.jpg') center center no-repeat;
+	background-size: 300px;
+}
+
+.card01:hover{
+	background: url('hero01.jpg') left center no-repeat;
+	background-size: 600px;
+}
+
+.card01:hover h2{
+	opacity: 1;
+}
+
+.card01:hover .fa{
+	opacity: 1;
+}
+
+.card02{
+	background: url('hero02.jpg') center center no-repeat;
+	background-size: 300px;
+}
+
+.card02:hover{
+	background: url('hero02.jpg') left center no-repeat;
+	background-size: 600px;
+}
+
+.card02:hover h2{
+	opacity: 1;
+}
+
+.card02:hover .fa{
+	opacity: 1;
+}
+
+.card03{
+	background: url('hero03.jpg') center center no-repeat;
+	background-size: 300px;
+}
+
+.card03:hover{
+	background: url('hero03.jpg') left center no-repeat;
+	background-size: 600px;
+}
+
+.card03:hover h2{
+	opacity: 1;
+}
+
+.card03:hover .fa{
+	opacity: 1;
+}
+
+.card04{
+	background: url('hero04.jpg') center center no-repeat;
+	background-size: 300px;
+}
+
+.card04:hover{
+	background: url('hero04.jpg') left center no-repeat;
+	background-size: 600px;
+}
+
+.card04:hover h2{
+	opacity: 1;
+}
+
+.card04:hover .fa{
+	opacity: 1;
+}
+
+h2{
+	font-family: "Montserrat", sans-serif;
+	color: #FFF;
+	margin: 20px;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.fa{
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.icons{
+	position: absolute;
+	fill: #FFF;
+	color: #FFF;
+	height: 130px;
+	top: 266px;
+	width: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
